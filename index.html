@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Haneul Palette – Premium Color Analysis</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+
+  <img src="logo.png" class="logo" />
+
+  <h1>Premium Korean Color Analysis</h1>
+  <p class="subtitle">Upload one clear selfie in natural light</p>
+
+  <input type="file" id="imageInput" accept="image/*" />
+
+  <button onclick="analyzeImage()">Analyze My Face</button>
+
+  <div id="loading" class="hidden">Analyzing… please wait</div>
+
+  <div id="results" class="hidden">
+
+    <h2>Your Preview Results</h2>
+
+    <p><b>Analysis ID:</b> <span id="analysisId"></span></p>
+
+    <div id="analysisText"></div>
+
+    <h3>Premium Report (Locked)</h3>
+    <p>₹1499 – Pay via UPI to unlock full PDF report</p>
+
+    <img src="upi-qr.png" class="qr" />
+
+    <a id="paymentLink" target="_blank">
+      <button class="payBtn">Submit Payment Screenshot</button>
+    </a>
+
+    <p class="note">
+      After verification, your detailed PDF will be emailed to you.
+    </p>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
